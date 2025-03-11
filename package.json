@@ -1,0 +1,50 @@
+{
+  "name": "@thequinndev/mermaid",
+  "version": "0.0.0-alpha.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest --coverage",
+    "build": "vite build && tsc -p tsconfig.build.json"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "author": "thequinndev",
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "keywords": [
+    "ts",
+    "typescript",
+    "mermaid",
+    "diagrams"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.10",
+    "@vitest/coverage-v8": "^3.0.8",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "express": "^4.21.2",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.1",
+    "vitest": "^3.0.8"
+  }
+}
